@@ -1,0 +1,232 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-evenly;
+    height: 100vh;
+ position:relative;
+  
+  }
+.accordian{
+    margin-bottom: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: visible;
+}
+
+
+
+.designContainer{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+
+}
+.design-Finlit{
+  
+  
+}
+
+  .footer{
+  position: absolute;
+  width:50%;
+  display: flex;
+  flex: row;
+  bottom: 0;
+  justify-content: space-evenly;
+    font-size:16px;
+    color: blue;
+    font-family: 'Geologica', sans-serif;
+
+  text-overflow: ellipsis; /* Add an ellipsis (...) at the end of the text if it overflows */
+
+  }
+
+  .clickable-image:hover {
+    opacity: 0.8;
+    cursor:pointer;
+  }
+.buttons{
+    width:60%;
+    display: flex;
+    flex: row;
+    justify-content: space-around; /* do space-between to left align the buttons*/
+    position: absolute;
+    margin-left: 20px;
+}
+
+.githubButton{
+    display: inline-block;
+
+
+}
+
+  
+  .box{
+    width: 50%;
+    height: 100vh; /* Set the height to cover the whole screen */
+    box-sizing: border-box;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    overflow: auto; /* or overflow: visible; */
+
+
+  }
+  .top-aligned, .middle-aligned{
+    margin-left: 20px;
+
+  }
+  
+
+/* Rounded border */
+.rounded div{
+ height: 3px;
+ border-radius: 5%;
+ width: 100%;
+ background-color: gray;
+ margin-top: 15px;
+ margin-bottom:15px;
+}
+
+  .linkClass{
+    margin-right:40px;
+  }
+  .links{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+
+  }
+  
+.top-aligned{
+position: absolute;
+top: 0;
+margin-top: 10px;
+
+}
+
+  .image{
+    max-width:200px;
+    height:auto;
+    border-radius: 50%;
+    border: 10px solid #9AC2CBff;
+
+  }
+  
+  .titleFont{
+    font-size:60px;
+    color: #10130Aff;
+    font-family: 'Geologica', sans-serif;
+    flex: 1 1 auto; /* Allow the text to shrink and grow as the container changes size */
+  overflow: hidden; /* Hide any overflow beyond the container */
+  text-overflow: ellipsis; /* Add an ellipsis (...) at the end of the text if it overflows */
+
+
+  }
+  
+@font-face {
+    font-family: 'Geologica', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Geologica:wght@600&display=swap');
+    
+}
+
+.diversity-text{
+
+    display:inline-block;
+    padding:10px;
+    background-color:#D9C9ADff;
+     color:white;
+}
+  
+  /* Media query to stack the divs on smaller screens */
+
+  @media (max-width: 1500px) {
+    
+    .diversity-text{
+        width: 100px;
+    }
+    
+    .hacktcnj-gif-container img{
+      width: 500px;
+    }
+  }
+
+  @media( max-width: 1300px){
+    .hacktcnj-gif-container img{
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .box {
+      width: 100%;
+    }
+    .titleFont{
+        font-size: 40px;
+    }
+    .footer{
+        font-size: 15px;
+        padding-left:50px;
+
+    }
+    .diversity-text{
+        width: 90px;
+    }
+    .hacktcnj-gif-container img{
+      width: 350px;
+    }
+ 
+  }
+
+   /* Media query to stack the divs on smaller screens */
+   @media (max-width: 800px) {
+    .box {
+      width: 100%;
+    }
+    .titleFont{
+        font-size: 35px;
+    }
+    .footer{
+        font-size: 15px;
+        padding-left:30px;
+        padding-right:30px;
+
+    }
+    .diversity-text{
+        width: 90px;
+    }
+
+    .hacktcnj-gif-container img{
+      width: 250px;
+    }
+
+    
+    .research-poster-image-container img{
+      width: 250px;
+    }
+   
+ 
+  }
+
+  @media (max-width: 400) {
+    .box {
+      width: 100%;
+    }
+    .titleFont{
+        font-size: 35px;
+        width:40%;
+        padding-left:30px;
+    }
+    .diversity-text{
+        width: 70px;
+    }
+
+    .hacktcnj-gif-container img{
+      width: 150px;
+    }
+
+    .research-poster-image-container img{
+      width: 150px;
+    }
+   
+  }
