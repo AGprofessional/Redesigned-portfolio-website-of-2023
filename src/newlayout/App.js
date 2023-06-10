@@ -80,7 +80,6 @@ function App() {
     <Accordian />
     
  
-    <ScrollToTopButton style={{position: "relative"}}/>
 
     
      </div>
