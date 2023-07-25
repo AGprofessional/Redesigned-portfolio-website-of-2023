@@ -39,39 +39,16 @@ export default function Accordian() {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             <div style={{display:"inline-block", padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                <b>Product Development Competitions</b>
+                <b>UI/UX iOS mobile app Figma design</b>
                 </div>
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I'm a natural problem solver and an innovator.</Typography>
+          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I enjoy creating pixel-perfect designs for mobile apps</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {/* -------begin product development details---- */}
           <div className="designContainer">
 
-          <div className='design-Finlit'>
-                          <Typography>
-                        <h1 style={{fontSize: "24px"}}>
-                          Awarded <span style={{color: "violet"}}> Grand Prize </span>at Rider University Collegiate Business Concept Competition 2022 &  <span style={{color: "green"}}> Finalist </span> at UPitch New Jersey 2022
-                        </h1>
-                      </Typography>
-                                <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-                                <Typography>
-                                <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                            <b>SuperSkate</b>
-                            </div>
-                                    
-                              </Typography>
-                              
-                                <div className='hacktcnj-gif-container' style={{marginBottom:"30px"}}>
-                                           {/*-----drop superskate pics here---------- */}
-                                          
-                                         
-                                            <img style={{margin: "10px", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "250px", width: "360px"}}src={superskate} alt='image'/>
-
-                                </div>
-                                </Paper>
-                   
-                  </div>
+         
 
 
 
@@ -80,7 +57,7 @@ export default function Accordian() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                          Awarded <span style={{color: "green"}}> Top 5 Finalist </span>at Rider University Collegiate Business Concept Competition 2021
+                           <span style={{color: "green"}}> FinLit </span>
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
@@ -100,7 +77,7 @@ export default function Accordian() {
             <div className='design-FinLit'>
                           <Typography>
                             <h1 style={{fontSize: "24px"}}>
-                              Awarded <span style={{color: "green"}}> Grand Prize </span>at Rider University Collegiate Business Concept Competition 2021
+                              Calendifi 
                             </h1>
                           </Typography>
                                     <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
@@ -138,7 +115,7 @@ export default function Accordian() {
             
             </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
- I can both lead a project and get down into the coding details!          </Typography>
+ I can both lead a project and implement a computational solution         </Typography>
         </AccordionSummary>
         <AccordionDetails>
 
