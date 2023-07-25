@@ -6,14 +6,18 @@
  position:relative;
   
   }
+
 .accordian{
-    margin-bottom: 300px;
     margin-left: 10px;
     margin-right: 10px;
     overflow: visible;
+
 }
 
-
+.up-arrow-dimensions{
+  width:100px;
+  height: 100px;
+}
 
 .designContainer{
   display: flex;
@@ -138,6 +142,15 @@ margin-top: 10px;
      color:white;
 }
   
+
+
+.Projects-Navigation{
+  display: none;
+}
+
+.scroll-up-button{
+  display: none;
+}
   /* Media query to stack the divs on smaller screens */
 
   @media (max-width: 1500px) {
@@ -167,6 +180,8 @@ margin-top: 10px;
     .footer{
         font-size: 15px;
         padding-left:50px;
+        margin-bottom: 40px;
+
 
     }
     .diversity-text{
@@ -174,6 +189,20 @@ margin-top: 10px;
     }
     .hacktcnj-gif-container img{
       width: 350px;
+    }
+
+    .Projects-Navigation{
+      display: flex;
+      vertical-align: middle;
+      justify-content: center;
+      margin-top: 35%;
+
+    }
+    .scroll-up-button{
+      display:flex;
+      vertical-align: middle;
+      justify-content: center;
+      margin-left: 75%;
     }
  
   }
@@ -204,7 +233,12 @@ margin-top: 10px;
     .research-poster-image-container img{
       width: 250px;
     }
-   
+   .footer{
+    font-size: 15px;
+    padding-left:50px;
+    margin-bottom: 40px;
+
+   }
  
   }
 
@@ -229,4 +263,9 @@ margin-top: 10px;
       width: 150px;
     }
    
-  }
+    .footer{
+      font-size: 15px;
+      padding-left:50px;
+      margin-bottom: 40px;
+    
+  }}

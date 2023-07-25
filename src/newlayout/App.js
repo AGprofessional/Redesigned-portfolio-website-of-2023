@@ -8,11 +8,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import Accordian from "./Accordian";
 import ScrollToTopButton from "./ScrollToTopButton";
 
+import upArrow from "./stock-images/up-arrow.png";
 
 function App() {
   return (
 
-<div className="container">
+<div className="container" id="top-of-page">
 
     <div className="box" style={{backgroundColor:"#F2C87Dff"}}>
     
@@ -33,8 +34,8 @@ function App() {
                 
             <div className="bottom-aligned">
                 <p className="footer">
-                     Created in June 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "black"}}>
-                    by Sunny </span>using React.js/Material UI
+                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "black"}}>
+                    Created by me </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
                 </p>
             </div>
 <div className="buttons">
@@ -69,6 +70,10 @@ function App() {
            </span>
 
 </div>
+
+<div class="Projects-Navigation">
+       <a href="#projects-are-here"><Button variant="contained"> Go to Projects</Button></a> 
+</div>
            
         </div>
     </div>
@@ -81,7 +86,19 @@ function App() {
     
  
 
-    
+    <div className="scroll-up-button" style={{cursor: "pointer"}}>
+        <a href="#top-of-page">
+           <button style={{background: "none",
+  border: "none",
+  margin: "7px",
+  padding: "0", cursor:"pointer"}}>
+           <img style={{width: "50px", height: "50px"}} src={upArrow} alt="go back up" />
+
+           </button>
+        
+            </a>
+            </div>
+
      </div>
 </div>
 

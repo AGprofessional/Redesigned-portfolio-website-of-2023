@@ -25,7 +25,7 @@ export default function Accordian() {
   };
 
   return (
-    <div className='accordian'>
+    <div className='accordian' id="projects-are-here">
               {/*1*/}
 
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -171,22 +171,7 @@ export default function Accordian() {
 
 
 
-                  <div className='design-Finlit'>
-                          <Typography>
-                        <h1 style={{fontSize: "24px"}}>
-                          Awarded <span style={{color: "green"}}> Best Failed Attempt Hack </span>at HackHERS at Rutgers, The State University of New Jersey 2021
-                        </h1>
-                      </Typography>
-                                <Paper elevation={3} style={{ backgroundColor: "#F2C87Dff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-                                <Typography>
-                                <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#DAB370ff", color:"white"}}>
-                            <b>Phishing Chrome Extension</b>
-                            </div>
-                                    
-                              </Typography>
-                                </Paper>
-                   
-                  </div>
+                  
           
         </div>
 
@@ -211,7 +196,7 @@ export default function Accordian() {
                 </b>
             </div>        </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-I'm just trying to make my life easier, if something can be automated, then why not make a computer do it?         </Typography>
+Machine Learning and AI projects       </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -237,7 +222,7 @@ I'm just trying to make my life easier, if something can be automated, then why 
 
                 </b>
             </div>        </Typography>
-          <Typography sx={{color: 'text.secondary' }} style={{marginLeft: "10px"}}> Sounds easy, but it's suprisingly really hard: Self-Driving Flying Cars         </Typography>
+          <Typography sx={{color: 'text.secondary' }} style={{marginLeft: "10px"}}> Self-Driving Vehicle         </Typography>
         </AccordionSummary>
         <AccordionDetails>
            {/*-----research projects start---------- */}
