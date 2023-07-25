@@ -24,8 +24,10 @@ export default function Accordian() {
     setExpanded(isExpanded ? panel : false);
   };
 
+ 
+
   return (
-    <div className='accordian' id="projects-are-here">
+    <div className='accordian' id="projects-are-here" >
               {/*1*/}
 
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>

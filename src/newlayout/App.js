@@ -7,10 +7,31 @@ import Tooltip from '@mui/material/Tooltip';
 import EmailIcon from '@mui/icons-material/Email';
 import Accordian from "./Accordian";
 import ScrollToTopButton from "./ScrollToTopButton";
-
+import { useRef } from "react";
 import upArrow from "./stock-images/up-arrow.png";
 
 function App() {
+
+   
+      
+        const ScrollToTop = () => {
+            const element = document.getElementById('top-of-page');
+            if (element) {
+              // 👇 Will scroll smoothly to the top of the next section
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          };
+
+   
+      
+        const ScrollToBottom = () => {
+            const element = document.getElementById('projects-are-here');
+            if (element) {
+              // 👇 Will scroll smoothly to the top of the next section
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          };
+    
   return (
 
 <div className="container" id="top-of-page">
@@ -72,13 +93,13 @@ function App() {
 </div>
 
 <div class="Projects-Navigation">
-       <a href="#projects-are-here"><Button variant="contained"> Go to Projects</Button></a> 
-</div>
-           
+        <Button onClick={ScrollToBottom}variant="contained"> Go to Projects</Button>
+        
+</div>     
         </div>
     </div>
 
-    <div className="box" style={{backgroundColor:"#10130Aff"}}>
+    <div className="box" style={{backgroundColor:"#10130Aff"}} >
         <h1 style={{marginLeft: "10px", color: "#E07F3Fff"}}>
             Portfolio
         </h1>
@@ -87,16 +108,14 @@ function App() {
  
 
     <div className="scroll-up-button" style={{cursor: "pointer"}}>
-        <a href="#top-of-page">
-           <button style={{background: "none",
-  border: "none",
-  margin: "7px",
-  padding: "0", cursor:"pointer"}}>
+           <Button onClick={ScrollToTop} style={{background: "none",
+                    border: "none",
+                    margin: "7px",
+                    padding: "0", cursor:"pointer"}}>
            <img style={{width: "50px", height: "50px"}} src={upArrow} alt="go back up" />
 
-           </button>
+           </Button>
         
-            </a>
             </div>
 
      </div>
