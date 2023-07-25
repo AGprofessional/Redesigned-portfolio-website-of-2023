@@ -56,7 +56,7 @@ function App() {
             <div className="bottom-aligned">
                 <p className="footer">
                      Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "black"}}>
-                    Created by me </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
+                    Implemented by Akash (Sunny) Gopalkrishnan </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
                 </p>
             </div>
 <div className="buttons">
