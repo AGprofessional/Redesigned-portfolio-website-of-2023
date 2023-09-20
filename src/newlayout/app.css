@@ -1,17 +1,16 @@
 .container {
     display: flex;
-    flex-wrap: wrap;
-  justify-content: space-evenly;
-    height: 100vh;
+  flex-wrap: wrap;
+justify-content: space-evenly;
+ height: 100vh;
  position:relative;
-  
   }
 
+  
 .accordian{
     margin-left: 10px;
     margin-right: 10px;
     overflow: visible;
-
 }
 
 .up-arrow-dimensions{
@@ -32,13 +31,16 @@ justify-content: center;
 
   .footer{
   position: absolute;
+  left: 1px;
   width:50%;
   display: flex;
   flex: row;
   bottom: 0;
   justify-content: space-evenly;
     font-size:16px;
-    color: blue;
+   /* color: #715AFF;*/
+   color: black;
+    
     font-family: 'Geologica', sans-serif;
 
   text-overflow: ellipsis; /* Add an ellipsis (...) at the end of the text if it overflows */
@@ -60,11 +62,8 @@ justify-content: center;
 
 .githubButton{
     display: inline-block;
-
-
 }
 
-  
   .box{
     width: 50%;
     height: 100vh; /* Set the height to cover the whole screen */
@@ -73,14 +72,17 @@ justify-content: center;
     align-items:center;
     flex-wrap:wrap;
     overflow: auto; /* or overflow: visible; */
-
-
+    background-color: #10130Aff;
+    
   }
+#portfolio {
+    margin-left: 10px;
+    color: #16db93;
+  }
+
   .top-aligned, .middle-aligned{
     margin-left: 20px;
-
   }
-  
 
 /* Rounded border */
 .rounded div{
@@ -113,7 +115,8 @@ margin-top: 10px;
     max-width:200px;
     height:auto;
     border-radius: 50%;
-    border: 10px solid #9AC2CBff;
+    /*border: 10px solid #715AFF;*/
+    border: 10px solid #ca2e55;
 
   }
   
@@ -142,10 +145,12 @@ margin-top: 10px;
      color:white;
 }
   
+/**/
 
 
 .Projects-Navigation{
   display: none;
+  
 }
 
 .scroll-up-button{
@@ -181,8 +186,6 @@ margin-top: 10px;
         font-size: 15px;
         padding-left:50px;
         margin-bottom: 40px;
-
-
     }
     .diversity-text{
         width: 90px;
@@ -204,6 +207,13 @@ margin-top: 10px;
       justify-content: center;
       margin-left: 75%;
     }
+
+    
+   
+    #portfolio{
+      color:#f3c77b;
+     }
+
  
   }
 
@@ -233,12 +243,23 @@ margin-top: 10px;
     .research-poster-image-container img{
       width: 250px;
     }
+
+
    .footer{
     font-size: 15px;
     padding-left:50px;
     margin-bottom: 40px;
+    margin-left: 10px;
 
    }
+
+   
+   
+   #portfolio{
+    color:#f3c77b;
+   }
+
+   
  
   }
 
@@ -262,7 +283,13 @@ margin-top: 10px;
     .research-poster-image-container img{
       width: 150px;
     }
+
+    
    
+    #portfolio{
+      color:#f3c77b;
+     }
+
     .footer{
       font-size: 15px;
       padding-left:50px;

@@ -3,12 +3,16 @@ import "./app.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import IconButton from '@mui/material/IconButton';
+import NorthIcon from '@mui/icons-material/North';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import Tooltip from '@mui/material/Tooltip';
 import EmailIcon from '@mui/icons-material/Email';
 import Accordian from "./Accordian";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { useRef } from "react";
 import upArrow from "./stock-images/up-arrow.png";
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
 
 function App() {
 
@@ -31,22 +35,22 @@ function App() {
               element.scrollIntoView({ behavior: 'smooth' });
             }
           };
-    
+          const color="#f2C87Dff" //sunset
+          const brown = "#826251" //not used this color yet, but its a great brown
   return (
 
 <div className="container" id="top-of-page">
 
-    <div className="box" style={{backgroundColor:"#F2C87Dff"}}>
-    
+    <div className="box" style={{backgroundColor:"#F3C77B"}}>
         <div className="yellow-box">
        
             <div className="top-aligned">
-                <img src="./assets/images/profile-pic.jpg" alt="image" className="image"/>
+                <img src="./assets/images/Gopalkrishnan, Akash.jpg" alt="self-image" className="image"/>
             </div>
            
             <div className="middle-aligned">
                 <p className="titleFont"style={{}}>
-                    Akash <span style={{color:"blue"}}>(Sunny)</span> Gopalkrishnan
+                    Akash <span style={{color:"#ca2e55"}}>(Sunny)</span> Gopalkrishnan
                 </p>
             </div>
             
@@ -55,7 +59,7 @@ function App() {
                 
             <div className="bottom-aligned">
                 <p className="footer">
-                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "black"}}>
+                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#ca2e55"}}>
                     Implemented by Akash (Sunny) Gopalkrishnan </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
                 </p>
             </div>
@@ -63,7 +67,7 @@ function App() {
 <span>
     <Tooltip title="LinkedIn: @akashgkrishn">
         
-    <IconButton  style={{color: "#9AC2CBff"}} outlinedSuccess href="https://www.linkedin.com/in/akashgkrishn" target="_blank">
+    <IconButton  style={{color: "#ca2e55"}} outlinedSuccess href="https://www.linkedin.com/in/akashgkrishn" target="_blank">
 <LinkedInIcon fontSize="large"/>
     </IconButton>
     
@@ -71,7 +75,7 @@ function App() {
 
     <Tooltip title="Github: @AGprofessional" >
         
-   <IconButton fullwidth style={{marginLeft: "50px", color:"#9AC2CBff"}} outlinedSuccess href="https://www.github.com/AGprofessional" target="_blank">
+   <IconButton fullwidth style={{marginLeft: "50px", color:"#ca2e55"}} outlinedSuccess href="https://www.github.com/AGprofessional" target="_blank">
    <GitHubIcon fontSize="large"/>
 
    </IconButton>
@@ -80,7 +84,7 @@ function App() {
  
    <Tooltip title="Email: sunny@hiringsunny.com" >
         
-        <IconButton fullwidth style={{marginLeft: "50px", color:"#9AC2CBff"}} outlinedSuccess href="" target="_blank">
+        <IconButton fullwidth style={{marginLeft: "50px", color:"#ca2e55"}} outlinedSuccess href="" target="_blank">
         <EmailIcon fontSize="large"/>
      
         </IconButton>
@@ -93,14 +97,15 @@ function App() {
 </div>
 
 <div class="Projects-Navigation">
-        <Button onClick={ScrollToBottom}variant="contained"> Go to Projects</Button>
-        
+  <Tooltip title="enjoy the good stuff">
+        <Button style={{backgroundColor:"black"}}onClick={ScrollToBottom} variant="contained"> My Projects</Button>
+    </Tooltip>
 </div>     
         </div>
     </div>
 
-    <div className="box" style={{backgroundColor:"#10130Aff"}} >
-        <h1 style={{marginLeft: "10px", color: "#E07F3Fff"}}>
+    <div className="box">
+        <h1 id="portfolio">
             Portfolio
         </h1>
     <Accordian />
@@ -108,13 +113,33 @@ function App() {
  
 
     <div className="scroll-up-button" style={{cursor: "pointer"}}>
-           <Button onClick={ScrollToTop} style={{background: "none",
+          {/* <Button onClick={ScrollToTop} style={{background: "none",
                     border: "none",
                     margin: "7px",
                     padding: "0", cursor:"pointer"}}>
            <img style={{width: "50px", height: "50px"}} src={upArrow} alt="go back up" />
 
-           </Button>
+           </Button> */}
+
+
+           <Tooltip title="No where but up from here">
+        
+        <IconButton  style={{background: "none",
+                    border: "none",
+                    margin: "7px",
+                    color:"#f3c77b",
+                    padding: "0", cursor:"pointer"}} 
+                    onClick={ScrollToTop} 
+                   fullwidth
+                   outlinedSuccess 
+                   href="" 
+                   target="_blank"
+          >
+        <ArrowCircleUpIcon fontSize="large"/>
+     
+        </IconButton>
+     
+        </Tooltip>
         
             </div>
 
