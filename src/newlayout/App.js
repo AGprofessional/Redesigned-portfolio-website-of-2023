@@ -43,9 +43,11 @@ function App() {
 
     <div className="box" style={{backgroundColor:"#F3C77B"}}>
         <div className="yellow-box">
-       
             <div className="top-aligned">
-                <img src="./assets/images/Gopalkrishnan, Akash.jpg" alt="self-image" className="image"/>
+            <Tooltip title="I'm mobile-friendly!">
+
+                <img  style={{cursor: "pointer"}} src="./assets/images/Gopalkrishnan, Akash.jpg" alt="self-image" className="image"/>
+                </Tooltip>
             </div>
            
             <div className="middle-aligned">
