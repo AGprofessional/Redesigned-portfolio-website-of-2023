@@ -17,7 +17,7 @@ import researchImage from "./all-other-assets/bird.jpg";
 import birdGif from "./all-other-assets/birdGif.gif";
 import bikeGif from "./all-other-assets/bikeGIF.gif";
 import bikeImg from "./all-other-assets/bikefull.JPG";
-export default function Accordian() {
+export default function AccordianMBA() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -39,27 +39,22 @@ export default function Accordian() {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             <div style={{display:"inline-block", padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                <b>UI/UX iOS mobile app Figma design</b>
+                <b>Valuations</b>
                 </div>
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I enjoy creating pixel-perfect designs for mobile apps</Typography>
+          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I have intermediate-to-advanced Microsoft Excel skills and I am a quick learner. </Typography>
         </AccordionSummary>
+        
         <AccordionDetails>
-          {/* -------begin product development details---- */}
+          {/* -------begin valuation details---- */}
           <div className="designContainer">
-
-         
-
-
-
-
-
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                           <span style={{color: "green"}}> FinLit </span>
+                           <span style={{color: "green"}}> Message me on email or LinkedIn to learn more! </span>
                         </h1>
                       </Typography>
+     {/*COMMENTS START HERE*
                                 <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
@@ -69,11 +64,7 @@ export default function Accordian() {
                               </Typography>
                                 <ResponsiveSlider images={imagesFinlit}/>
                                 </Paper>
-                   
                   </div>
-
-
-
             <div className='design-FinLit'>
                           <Typography>
                             <h1 style={{fontSize: "24px"}}>
@@ -93,9 +84,12 @@ export default function Accordian() {
           
         </div>
       
-                    {/* -------end product development details---- */}
-
+                    {/* -------end product development details---- 
+  */}
+  </div>
+  </div>
         </AccordionDetails>
+ 
       </Accordion>
       {/*2 */}
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}}  expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -108,14 +102,14 @@ export default function Accordian() {
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             
             <div style={{display:"inline-block", padding:"10px", backgroundColor:"#DAB370ff", color:"white"}}>
-                <b>Hackathons
+                <b>Competitions
 
                 </b>
             </div>
             
             </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
- I can both lead a project and implement a computational solution         </Typography>
+ I enjoy applying my skills to solve real-world challenges while still in school. Message me on email or LinkedIn to learn more!</Typography>
         </AccordionSummary>
         <AccordionDetails>
 
@@ -124,9 +118,11 @@ export default function Accordian() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                        Awarded <span style={{color: "green"}}> Best Use of Google Cloud Platform </span>at HackTCNJ, The College of New Jersey 2021
+                         <span style={{color: "green"}}>Find me on LinkedIn!</span>
                         </h1>
                       </Typography>
+
+ {/*Comments start here
                                 <Paper elevation={3} style={{ backgroundColor: "#F2C87Dff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#DAB370ff", color:"white"}}>
@@ -138,7 +134,7 @@ export default function Accordian() {
                               </Typography>
 
                               <div className='hacktcnj-gif-container' style={{marginBottom:"30px"}}>
-                                          {/*-----drop hacktcnj gif here---------- */}
+                                          {/*-----drop hacktcnj gif here---------- 
                                           <a href='https://www.youtube.com/watch?v=xsMvJurmF_w' target='_blank'>
                                             <img className="clickable-image" src={animatedGIF} alt='animated gif'/>
 
@@ -148,18 +144,17 @@ export default function Accordian() {
                    
                   </div>
 
-
-
-                  
-          
         </div>
 
-                  {/*----end hackathon details----------- */}
+                  {/*----end hackathon details----------- * commments end here*/
+}
+</div>
+</div>{/**delete these 2 divs when editiing again */}
 
         </AccordionDetails>
       </Accordion>
 
-            {/*3 */}
+           { /*3*/} 
 
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary
@@ -170,16 +165,16 @@ export default function Accordian() {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
           <div className="diversity-text">
-                <b>Current Projects
+                <b>Business Analytics Projects
 
                 </b>
             </div>        </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-Machine Learning and AI projects       </Typography>
+          Message me on email or LinkedIn to learn more!      </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Coming Soon!
+          Message me on email or LinkedIn to learn more!
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -197,14 +192,15 @@ Machine Learning and AI projects       </Typography>
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
           <div style={{display:"inline-block", padding:"10px", backgroundColor:"#CD7335ff", color:"white"}}>
-                <b>Research Projects
+                <b>Contact Me
 
                 </b>
             </div>        </Typography>
-          <Typography sx={{color: 'text.secondary' }} style={{marginLeft: "10px"}}> Self-Driving Vehicle         </Typography>
+          <Typography sx={{color: 'text.secondary' }} style={{marginLeft: "10px"}}> Message me on email or LinkedIn to learn more!       </Typography>
         </AccordionSummary>
+        {/* comments start here
         <AccordionDetails>
-           {/*-----research projects start---------- */}
+           {/*-----research projects start---------- *
         <div className="designContainer">
               <div className='design-Finlit'>
                           <Typography>
@@ -223,7 +219,7 @@ Machine Learning and AI projects       </Typography>
                               </Typography>
 
                               <div className='research-poster-img-container' style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
-                                          {/*-----drop research poster image here---------- */}
+                                          {/*-----drop research poster image here---------- *
 
                                           <img style={{margin: "10px", boxSizing:"border-box", height: "200px", width: "320px"}}src={researchImage} alt='research image'/>
                                          <a href='https://www.youtube.com/shorts/ISVF2acChVY' target='_blank'>
@@ -238,12 +234,15 @@ Machine Learning and AI projects       </Typography>
                   </div>
         </div>
 
-                  {/*----end research project details----------- */}
+                  {/*----end research project details----------- *
         </AccordionDetails>
+*/}
       </Accordion>
 
 
 {/*5 */}
+
+
 
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}}expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
         <AccordionSummary
@@ -254,13 +253,14 @@ Machine Learning and AI projects       </Typography>
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>          
           <div style={{display:"inline-block", padding:"10px", backgroundColor:"#A998CAff", color:"white"}}>
-                <b>3D Modeling
-
+                <b> Hit the Like Button!
                 </b>
             </div> </Typography>
         </AccordionSummary>
+
+        {/* 
         <AccordionDetails>
-           {/*-----3d modeling projects start---------- */}
+           {/*-----3d modeling projects start---------- *
         <div className="designContainer">
               <div className='design-Finlit'>
                           <Typography>
@@ -279,7 +279,7 @@ Machine Learning and AI projects       </Typography>
                               </Typography>
 
                               <div className='bike-container' style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
-                                          {/*-----drop bike image here---------- */}
+                                          {/*-----drop bike image here---------- *
                                           <a href='https://www.youtube.com/watch?v=rOuEvl8O1Ls' target='_blank'>
                                           <img className="clickable-image" style={{margin: "10px", boxSizing:"border-box", height: "220px", width: "320px"}}src={bikeImg} alt='bike image'/>
 
@@ -293,9 +293,16 @@ Machine Learning and AI projects       </Typography>
                   </div>
         </div>
 
-                  {/*----3D Modeling  project details end---------- */}
+                  {/*----3D Modeling  project details end---------- *
+
+
+
         </AccordionDetails>
+*/}
       </Accordion>
     </div>
+
+    
+    
   );
 }

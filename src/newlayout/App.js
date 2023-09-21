@@ -7,17 +7,27 @@ import NorthIcon from '@mui/icons-material/North';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import Tooltip from '@mui/material/Tooltip';
 import EmailIcon from '@mui/icons-material/Email';
-import Accordian from "./Accordian";
+import Accordian from "./AccordianEngineering";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { useRef } from "react";
 import upArrow from "./stock-images/up-arrow.png";
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
+import LikeButton from "./components/LikeButton";
+import {useState} from "react";
+import Switch from '@mui/material/Switch';
+import RadioButtons from "./components/RadioButtons";
 
 function App() {
 
-   
-      
+       const objectOn="Engineering";
+       const objectOff = "MBA";
+       const [isSwitchOn, setIsSwitchOn] = useState(true);
+          // Function to handle switch toggle
+          const handleSwitchToggle = () => {
+            setIsSwitchOn((prev) => !prev);
+          }
+
         const ScrollToTop = () => {
             const element = document.getElementById('top-of-page');
             if (element) {
@@ -26,8 +36,6 @@ function App() {
             }
           };
 
-   
-      
         const ScrollToBottom = () => {
             const element = document.getElementById('projects-are-here');
             if (element) {
@@ -44,32 +52,36 @@ function App() {
     <div className="box" style={{backgroundColor:"#F3C77B"}}>
         <div className="yellow-box">
             <div className="top-aligned">
-            <Tooltip title="I'm mobile-friendly!">
 
-                <img  style={{cursor: "pointer"}} src="./assets/images/Gopalkrishnan, Akash.jpg" alt="self-image" className="image"/>
-                </Tooltip>
+                <div className="image-container">
+                  <Tooltip title="I'm mobile-friendly!">
+                  <img  style={{cursor: "pointer"}} src="./assets/images/Gopalkrishnan, Akash.jpg" alt="self-image" className="image"/>
+                  </Tooltip>
+                </div>
+                {/* <div className="likebutton">
+                <LikeButton/>
+                </div>
+               */}
+               
             </div>
-           
+
             <div className="middle-aligned">
                 <p className="titleFont"style={{}}>
-                    Akash <span style={{color:"#ca2e55"}}>(Sunny)</span> Gopalkrishnan
+                    Akash <span style={{color:"#715AFF"}}>(Sunny)</span> Gopalkrishnan
                 </p>
             </div>
             
-            
-               
-                
             <div className="bottom-aligned">
                 <p className="footer">
-                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#ca2e55"}}>
+                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#715AFF"}}>
                     Implemented by Akash (Sunny) Gopalkrishnan </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
                 </p>
             </div>
 <div className="buttons">
 <span>
+
     <Tooltip title="LinkedIn: @akashgkrishn">
-        
-    <IconButton  style={{color: "#ca2e55"}} outlinedSuccess href="https://www.linkedin.com/in/akashgkrishn" target="_blank">
+    <IconButton  style={{color: "#715AFF"}} outlinedSuccess href="https://www.linkedin.com/in/akashgkrishn" target="_blank">
 <LinkedInIcon fontSize="large"/>
     </IconButton>
     
@@ -77,40 +89,59 @@ function App() {
 
     <Tooltip title="Github: @AGprofessional" >
         
-   <IconButton fullwidth style={{marginLeft: "50px", color:"#ca2e55"}} outlinedSuccess href="https://www.github.com/AGprofessional" target="_blank">
+   <IconButton fullwidth style={{marginLeft: "50px", color:"#16db93"}} outlinedSuccess href="https://www.github.com/AGprofessional" target="_blank">
    <GitHubIcon fontSize="large"/>
 
    </IconButton>
 
    </Tooltip>
- 
+
    <Tooltip title="Email: sunny@hiringsunny.com" >
         
-        <IconButton fullwidth style={{marginLeft: "50px", color:"#ca2e55"}} outlinedSuccess href="" target="_blank">
+        <IconButton fullwidth style={{marginLeft: "50px", color:"#715AFF"}} outlinedSuccess href="" target="_blank">
         <EmailIcon fontSize="large"/>
      
         </IconButton>
      
         </Tooltip>
-      
-   
+
            </span>
 
 </div>
 
 <div class="Projects-Navigation">
   <Tooltip title="enjoy the good stuff">
-        <Button style={{backgroundColor:"black"}}onClick={ScrollToBottom} variant="contained"> My Projects</Button>
-    </Tooltip>
+    <Button style={{backgroundColor:"#ca2e55"}} onClick={ScrollToBottom} variant="contained"> My Projects</Button>
+  </Tooltip>
 </div>     
         </div>
     </div>
-
+{/* <p id="engVSmba">{isSwitchOn ? objectOn : objectOff}</p>
+        <Switch
+            checked={isSwitchOn}
+            onChange={handleSwitchToggle}
+            color="primary"
+            name="toggleSwitch"
+            
+            inputProps={{ 'aria-label': 'Toggle switch' }}
+          /> */}
     <div className="box">
-        <h1 id="portfolio">
-            Portfolio
-        </h1>
-    <Accordian />
+      <div className="mainContainer">
+             
+             {/* <h1 id="portfolio">
+Portfolio
+</h1>
+ */}
+              <div id="switch">
+
+                
+                <RadioButtons />
+                
+                </div>
+              
+        </div>
+        
+      {/*<Accordian /> */}  
     
  
 

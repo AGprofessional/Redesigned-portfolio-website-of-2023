@@ -4,6 +4,7 @@
 justify-content: space-evenly;
  height: 100vh;
  position:relative;
+ 
   }
 
   
@@ -66,6 +67,7 @@ justify-content: center;
 
   .box{
     width: 50%;
+    border: 0px solid yellow;
     height: 100vh; /* Set the height to cover the whole screen */
     box-sizing: border-box;
     display:flex;
@@ -73,11 +75,23 @@ justify-content: center;
     flex-wrap:wrap;
     overflow: auto; /* or overflow: visible; */
     background-color: #10130Aff;
+  }
+
+  .mainContainer{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+  }
+  #switch{
+    margin-right: 5px;
+    border: 0px solid blue;
+    width:100%;
     
   }
+
 #portfolio {
     margin-left: 10px;
-    color: #16db93;
+    color: #ca2e55;
   }
 
   .top-aligned, .middle-aligned{
@@ -108,7 +122,11 @@ justify-content: center;
 position: absolute;
 top: 0;
 margin-top: 10px;
-
+justify-content: space-between;
+width: 90%;
+display:flex;
+justify-content: space-between;
+align-items: center;
 }
 
   .image{
@@ -120,6 +138,48 @@ margin-top: 10px;
 
   }
   
+.likebutton{
+  padding-right: 20px;
+  width:50%;
+  height:50%;
+  align-items: center;
+}
+
+.top-container{
+  display:flex;
+  justify-content: flex-end;
+
+}
+
+.engVSmba{
+  margin:0px;
+  padding:0px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between; /* This will push the "radioButtons" div to the right */
+  align-items: center; /* Vertically center the content within the row */
+  /* Add any other styling as needed */
+}
+
+
+#radiobutton-group{
+  display: block;
+  position: absolute;
+  right:0px;
+  display:flex;
+
+}
+
+#ind-radios{
+  display: flex;
+  flex-direction:row;
+}
+.radioButtons{
+  display: flex;
+  justify-content: flex-end;
+}
   .titleFont{
     font-size:60px;
     color: #10130Aff;
@@ -212,6 +272,7 @@ margin-top: 10px;
    
     #portfolio{
       color:#f3c77b;
+
      }
 
  
