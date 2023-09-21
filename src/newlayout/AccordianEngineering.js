@@ -254,7 +254,7 @@ export default function AccordianEngineering() {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>          
           <div style={{display:"inline-block", padding:"10px", backgroundColor:"#A998CAff", color:"white"}}>
-                <b>SolidWork, AutoCAD, 3D Modeling
+                <b>SolidWorks, AutoCAD, 3D Modeling
 
                 </b>
             </div> </Typography>
