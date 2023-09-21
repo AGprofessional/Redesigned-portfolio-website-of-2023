@@ -17,7 +17,14 @@ import LikeButton from "./components/LikeButton";
 import {useState} from "react";
 import Switch from '@mui/material/Switch';
 import RadioButtons from "./components/RadioButtons";
-
+import reactLogo from "./all-other-assets/logo/react.png";
+import cssLogo from "./all-other-assets/logo/css-3.png";
+import jsLogo from "./all-other-assets/logo/js.png";
+import htmlLogo from "./all-other-assets/logo/html-5.png";
+import nodeLogo from "./all-other-assets/logo/nodejs.png";
+import gitLogo from "./all-other-assets/logo/github.png";
+import aiLogo from "./all-other-assets/logo/ai.png";
+import googleLogo from "./all-other-assets/logo/google-logo.png";
 function App() {
 
        const objectOn="Engineering";
@@ -72,10 +79,34 @@ function App() {
             </div>
             
             <div className="bottom-aligned">
+            <Tooltip title="powered by React, CSS, HTML, Javascript, Node.js, Git, Vercel, MaterialUI, ChatGPT-3.5">
+
                 <p className="footer">
-                     Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#715AFF"}}>
-                    Implemented by Akash (Sunny) Gopalkrishnan </span>using React.js, HTML, CSS, JavaScript, Git, Node.js, Vercel
+                     ©️Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#715AFF"}}>
+                    coded, debuged, & tested by Akash (Sunny) Gopalkrishnan </span>
+
+                    <div>
+                      
+                        <span><img src={reactLogo} height="40" width="40" alt="React.js" /></span>
+                        <span><img src={htmlLogo} width="40" height="40" alt="HTML5"/></span>
+                        <span><img src={cssLogo} width="40" height="40" alt="CSS3"/></span>
+                    </div>
+                    
+                     <div>
+                        <span><img src={jsLogo} width="40" height="40" alt="Javascript"/></span>
+                        <span><img src={gitLogo} width="40" height="40" alt="Git"/></span>
+                        <span><img src={nodeLogo} width="40" height="40" alt="Node.js"/></span>
+                     </div>
+                     <div>
+                        <span><img src={aiLogo} width="40" height="40" alt="ChatGPT"/></span>
+                        <span><img src={googleLogo} width="40" height="40" alt="google-MaterialUI"/></span>
+                     </div>
+                     
+
+                     
                 </p>
+                </Tooltip>
+
             </div>
 <div className="buttons">
 <span>
