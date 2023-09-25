@@ -1,3 +1,7 @@
+
+
+
+
 import React from 'react';
 import "./responsiveSlider.css";
 import images from "./imagesFinlit";
@@ -34,3 +38,4 @@ setWidth(carousel.current.scrollWidth-carousel.current.offsetWidth);
 }
 
 //https://www.youtube.com/watch?v=W0bEL93tt4k
+

@@ -42,7 +42,7 @@ export default function AccordianEngineering() {
                 <b>Product Innovation: Design Thinking, UI/UX, Front-end</b>
                 </div>
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I take a human-centered approach to product innovation. I can translate business requirements into technical specifications and implement several cloud, web development, and AI solutions.</Typography>
+          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I take a human-centered approach to product innovation. I can translate business requirements into technical specifications and implement several cloud, web development, and AI solutions. I'm certified in Design Thinking.</Typography>
         </AccordionSummary>
         <AccordionDetails>
           {/* -------begin product development details---- */}
@@ -63,11 +63,14 @@ export default function AccordianEngineering() {
                                 <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                            <b>FinLit</b>
+                            <b>Swipe right or left!</b>
                             </div>
                                     
                               </Typography>
-                                <ResponsiveSlider images={imagesFinlit}/>
+                              <div className='responsiveSlider'> 
+                              <ResponsiveSlider images={imagesFinlit}/> 
+
+                              </div>
                                 </Paper>
                    
                   </div>
@@ -83,7 +86,7 @@ export default function AccordianEngineering() {
                                     <Paper elevation={3} style={{ backgroundColor: "#9AC2CBff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                     <Typography>
                                     <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                                <b>Calendifi</b>
+                                    <b>Swipe right or left!</b>
                                 </div>
                                         
                                   </Typography>
@@ -169,7 +172,7 @@ export default function AccordianEngineering() {
           id="panel3bh-header"
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
-          <div className="diversity-text">
+          <div className="diversity-text eng" >
                 <b>Machine Learning, Artificial Intelligence, Generative AI
 
                 </b>
@@ -179,7 +182,7 @@ export default function AccordianEngineering() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Message me on LinkedIn to learn more!
+            Do you want to see my latest Business Intelligence Machine Learning Project? If yes then navigate to the <span style={{color: "#ca2e55", fontWeight:"bolder"}}> MBA</span> tab and check out "<span style={{color: "#ca2e55", fontWeight:"bolder"}}>Business Intelligence with Data Mining</span>"! Thank you!
           </Typography>
         </AccordionDetails>
       </Accordion>

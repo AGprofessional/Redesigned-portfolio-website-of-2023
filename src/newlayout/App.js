@@ -79,7 +79,7 @@ function App() {
             </div>
             
             <div className="bottom-aligned">
-            <Tooltip title="powered by React, CSS, HTML, Javascript, Node.js, Git, Vercel, MaterialUI, ChatGPT-3.5">
+            <Tooltip title="powered by ReactJS, CSS, HTML, Javascript, Node.js, Git, Vercel, MaterialUI, ChatGPT-3.5">
 
                 <p className="footer">
                      ©️Copyright 2023 <span style={{marginLeft: "10px",marginRight:"10px", color: "#715AFF"}}>
