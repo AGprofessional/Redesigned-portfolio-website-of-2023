@@ -91,6 +91,16 @@ export default function AccordianCoding() {
 
                                           <img style={{margin: "10px", border:"3px solid black", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "360px", width: "360px"}}src={results} alt='Results Report'/>
  */}
+                                
+                                <div>
+    <a href="https://www.loom.com/share/9590d71b10194db09f1a4520623f14e5">
+    </a>
+    <a href="https://www.loom.com/share/9590d71b10194db09f1a4520623f14e5">
+      <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/9590d71b10194db09f1a4520623f14e5-with-play.gif"/>
+    </a>
+  </div>
+                               
+
                                 </div>
                                 </Paper>
                    
@@ -129,6 +139,13 @@ export default function AccordianCoding() {
 
                                           <img style={{margin: "10px", border:"3px solid black", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "190px", width: "360px"}}src={result2} alt='Graph'/>
  */}
+  <div>
+    <a href="https://www.loom.com/share/a64cc0d85b4745c480a0c2b5ae49ba28">
+    </a>
+    <a href="https://www.loom.com/share/a64cc0d85b4745c480a0c2b5ae49ba28">
+      <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/a64cc0d85b4745c480a0c2b5ae49ba28-with-play.gif"/>
+    </a>
+  </div>
                                 </div>
                                 </Paper>
                    
