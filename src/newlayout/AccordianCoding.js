@@ -26,7 +26,8 @@ import result1 from "./all-other-assets/kmeans/chart.jpg";
 import result2 from "./all-other-assets/kmeans/result-graph.jpg";
 import processK from "./all-other-assets/kmeans/kMeans.png";
 
-export default function AccordianMBA() {
+//PUT CODEPATH WALKTHROUGH GIFS HERE - PUBLISH LINKS TO CODE AFTER CODEPATH IS OVER
+export default function AccordianCoding() {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -50,12 +51,12 @@ export default function AccordianMBA() {
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
           <div className="diversity-text">
-                <b>Business Intelligence with Data Mining
+                <b>Fun React Web Apps
 
                 </b>
             </div>        </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-          I'm skilled at driving insights through business analytics!      </Typography>
+          I'm in love with React.js! It's so fun to quickly iterate and prototype new ideas with ReactJS!    </Typography>
         </AccordionSummary>
       {/*<AccordionDetails>
           <Typography>
@@ -69,14 +70,14 @@ export default function AccordianMBA() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                         <span style={{color: "green"}}> </span> Data Mining of customer profile data using Supervised Machine Learning: Decision Tree 
+                         <span style={{color: "green"}}> </span> Best Restaurants in America
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#E3803Fff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#CD7335ff", color:"white"}}>
                             <b>
-                        Predict Bank Loan Default Risk with 77% Accuracy using RapidMiner 
+                        Tools used: ReactJS, HTML, CSS, ChatGPT
                             </b>
                             </div>
                                     
@@ -84,12 +85,12 @@ export default function AccordianMBA() {
 
                               <div className='research-poster-img-container' style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
                                           {/*-----drop research poster image here---------- */}
-
+{/**
                                           <img style={{margin: "10px", border: "3px solid black", boxSizing:"border-box", height: "230px", width: "320px"}}src={decTree} alt='decision tree'/>
                                          <img className="" style={{margin:"10px", border:"3px solid black", boxSizing:"border-box", height: "170px", width: "350px"}} src={process} alt="RapidMiner Process"/>
 
                                           <img style={{margin: "10px", border:"3px solid black", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "360px", width: "360px"}}src={results} alt='Results Report'/>
-
+ */}
                                 </div>
                                 </Paper>
                    
@@ -107,14 +108,14 @@ export default function AccordianMBA() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                         <span style={{color: "green"}}> </span> Strategic Promotional Strategy: Data Mining of Financial Data From a Retail Chain
+                         <span style={{color: "green"}}> </span> Guess the Celebrity? Heads-up Game
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#E3803Fff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#CD7335ff", color:"white"}}>
                             <b>
-                        K-Means Clustering, Unsupervised Machine Learning using RapidMiner
+                        Tools used: ReactJS: useState hook, HTML, CSS
                             </b>
                             </div>
                                     
@@ -122,12 +123,12 @@ export default function AccordianMBA() {
 
                               <div className='research-poster-img-container' style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
                                           {/*-----drop research poster image here---------- */}
-
+{/**
                                           <img style={{margin: "10px", border: "3px solid black", boxSizing:"border-box", height: "230px", width: "320px"}}src={processK} alt='k-means process'/>
                                          <img className="" style={{margin:"10px", border:"3px solid black", boxSizing:"border-box", height: "200px", width: "350px"}} src={result1} alt="Result"/>
 
                                           <img style={{margin: "10px", border:"3px solid black", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "190px", width: "360px"}}src={result2} alt='Graph'/>
-
+ */}
                                 </div>
                                 </Paper>
                    
@@ -152,14 +153,14 @@ export default function AccordianMBA() {
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             
             <div style={{display:"inline-block", padding:"10px", backgroundColor:"#D9C9ADff", color:"white"}}>
-                <b>Finance: Capital Investment Project
+                <b>Coming Soon!
 
                 </b>
             </div>
             
             </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
- I enjoy applying my skills to solve real-world challenges while still in school!</Typography>
+ Coming Soon!</Typography>
         </AccordionSummary>
         <AccordionDetails>
 
@@ -168,7 +169,7 @@ export default function AccordianMBA() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                         <span style={{color: "green"}}>Cost-Beneift Analysis-NPV Method</span>
+                         <span style={{color: "green"}}> Coming Soon!</span>
                         </h1>
                       </Typography>
 
@@ -176,7 +177,7 @@ export default function AccordianMBA() {
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#DAB370ff", color:"white"}}>
                             <b>
-Can the company afford to develop a training program?                            </b>
+Coming Soon!                      </b>
                             </div>
                                     
                               </Typography>
@@ -187,7 +188,6 @@ Can the company afford to develop a training program?                           
                                             <img className="clickable-image" src={animatedGIF} alt='animated gif'/>
 
                                           </a>*/}
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQPeHBLUQZhlEYg8sCmsvqbCmVrBkovIT4sBu_hbebTTRrD7wbYC-N6OJGLBwmWeg/embed?start=true&loop=true&delayms=2500" frameborder="0" width="380" height="289" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                                 </div>
                                 </Paper>
                    
@@ -212,10 +212,10 @@ Can the company afford to develop a training program?                           
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             <div style={{display:"inline-block", padding:"10px", backgroundColor:"#8CAFB7ff", color:"white"}}>
-                <b>Valuations</b>
+                <b>Coming Soon!</b>
                 </div>
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> I have intermediate-to-advanced Microsoft Excel skills and I am a quick learner. </Typography>
+          <Typography sx={{ color: 'text.secondary' }} style={{marginLeft: "10px"}}> Coming Soon! </Typography>
         </AccordionSummary>
         
         <AccordionDetails>

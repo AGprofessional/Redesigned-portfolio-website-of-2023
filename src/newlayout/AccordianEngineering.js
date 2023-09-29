@@ -127,7 +127,7 @@ export default function AccordianEngineering() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                        Awarded <span style={{color: "green"}}> Best Use of Google Cloud Platform </span>at HackTCNJ, The College of New Jersey 2021
+                        Awarded <span style={{color: "green"}}> Best Use of Google Cloud Platform </span>at HackTCNJ, The College of New Jersey 
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#F2C87Dff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
@@ -212,7 +212,7 @@ export default function AccordianEngineering() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                         <span style={{color: "green"}}> Mechanical and Aerospace Engineering </span> with Professor Bagchi at Rutgers, The State University of New Jersey 2017
+                         <span style={{color: "green"}}> Mechanical and Aerospace Engineering </span> at Rutgers U. School of Engineering
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#E3803Fff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
@@ -268,7 +268,7 @@ export default function AccordianEngineering() {
               <div className='design-Finlit'>
                           <Typography>
                         <h1 style={{fontSize: "24px"}}>
-                         <span style={{color: "green"}}> Mechanical and Aerospace Engineering </span> at Rutgers, The State University of New Jersey 2014
+                         <span style={{color: "green"}}> Mechanical and Aerospace Engineering </span> at Rutgers U. School of Engineering
                         </h1>
                       </Typography>
                                 <Paper elevation={3} style={{ backgroundColor: "#BCACE3ff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>

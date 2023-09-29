@@ -4,8 +4,19 @@ import Accordian from '../../AccordianEngineering';
 import {  ThemeProvider, createTheme } from '@mui/material';
 import AccordianEngineering from '../../AccordianEngineering';
 import AccordianMBA from '../../AccordianMBA';
+import AccordianCoding from '../../AccordianCoding';
 
 function RadioButton() {
+
+  const conditionalRendering=()=> {
+    {if (selectedValue == "Engineering"){
+      return <AccordianEngineering />
+  } else if (selectedValue== "MBA") {
+    return <AccordianMBA/>
+  } else if (selectedValue=="Coding"){
+    return <AccordianCoding />
+  }}}
+  
   const [selectedValue, setSelectedValue] = useState('Engineering');
 
   const handleChange = (event) => {
@@ -58,6 +69,12 @@ function RadioButton() {
             label={<span style={customLabelStyles}>MBA</span>
         }/>
 
+            <FormControlLabel
+            value="Coding"
+            control={<Radio sx={customRadioStyles}  />}
+            label={<span style={customLabelStyles}>Coding</span>
+        }/>
+
 
         </RadioGroup>
         </FormControl>
@@ -73,7 +90,9 @@ function RadioButton() {
   Portfolio
 </h1>
 
-{(selectedValue=="Engineering")? <AccordianEngineering />: <AccordianMBA />}
+{/* use this when you only have 2 buttons: engineering and mba: {(selectedValue=="Engineering")? <AccordianEngineering />: <AccordianMBA />}*/}
+{/*use this because i'm doing 3 buttons: engineering, mba, and coding (codepath projects)*/}{conditionalRendering()}
+
 
 
 </>
