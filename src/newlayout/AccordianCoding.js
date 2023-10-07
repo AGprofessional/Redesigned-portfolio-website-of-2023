@@ -125,7 +125,22 @@ export default function AccordianCoding() {
                                 <Typography>
                                 <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#CD7335ff", color:"white"}}>
                             <b>
-                        Tools used: ReactJS: useState hook, HTML, CSS
+                        Tools used: React.js:  
+                        <div style={{color:"black"}}>
+                      
+                                <li>
+                                useState with arrays
+                                  </li> 
+                                  <li>
+                                    pass by props
+                                    </li>
+                                    <li>
+                                      components
+                                      </li>
+                                      <li>
+                                        HTML, CSS, Javascript
+                                        </li> 
+                                        </div>
                             </b>
                             </div>
                                     
@@ -153,11 +168,86 @@ export default function AccordianCoding() {
         </div>
 
         </AccordionDetails>
-        </Accordion>
 
 
       {/* content of the accordian ends here */}
 
+
+
+       {/* content of the accordian starts here */}
+       <AccordionDetails>
+        <div className="designContainer">
+              <div className='design-Finlit'>
+                          <Typography>
+                        <h1 style={{fontSize: "24px"}}>
+                         <span style={{color: "green"}}> </span> Guess the Celebrity? Heads-up Game Part 2 - More Functionality!!
+                        </h1>
+                      </Typography>
+                                <Paper elevation={3} style={{ backgroundColor: "#E3803Fff", marginBottom: "30px",display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+                                <Typography>
+                                <div style={{display:"inline-block", margin: "10px",padding:"10px", backgroundColor:"#CD7335ff", color:"white"}}>
+                            <b>
+                      
+                        Tools used: React.js:
+                        <div style={{color:"black"}}>
+
+                        <li>
+                        Lifting up State
+                          </li>  
+                          <li>
+                          Event Handler onClick
+                            </li>
+                            <li>
+                            React Forms
+                              </li>
+                              <li>
+                              Controlled Components
+                                </li>
+                                <li>
+                                useState with objects
+                                  </li> 
+                                  <li>
+                                    pass by props
+                                    </li>
+                                    <li>
+                                      components
+                                      </li>
+                                      <li>
+                                        HTML, CSS, Javascript
+                                        </li> 
+                                        </div>
+
+                            </b>
+                            </div>
+                                    
+                              </Typography>
+
+                              <div className='research-poster-img-container' style={{display:"flex", flexWrap:"wrap", justifyContent:"space-evenly" }}>
+                                          {/*-----drop research poster image here---------- */}
+{/**
+                                          <img style={{margin: "10px", border: "3px solid black", boxSizing:"border-box", height: "230px", width: "320px"}}src={processK} alt='k-means process'/>
+                                         <img className="" style={{margin:"10px", border:"3px solid black", boxSizing:"border-box", height: "200px", width: "350px"}} src={result1} alt="Result"/>
+
+                                          <img style={{margin: "10px", border:"3px solid black", marginTop:"20px",marginBottom:"30px", boxSizing:"border-box", height: "190px", width: "360px"}}src={result2} alt='Graph'/>
+ */}
+  <div>
+    <a href="https://www.loom.com/share/a83f55ad311f42e380c5113fe463cb56">
+    </a>
+    <a href="https://www.loom.com/share/a83f55ad311f42e380c5113fe463cb56">
+      <img style={{maxWidth: "300px"}} src="https://cdn.loom.com/sessions/thumbnails/a83f55ad311f42e380c5113fe463cb56-with-play.gif"/>
+    </a>
+  </div>
+                                </div>
+                                </Paper>
+                   
+                  </div>
+        </div>
+
+        </AccordionDetails>
+        </Accordion>
+
+
+      {/* content of the accordian ends here */}
 
       {/*2 */}
       <Accordion style={{backgroundColor:"white", marginBottom:"3px"}}  expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>

@@ -12,7 +12,7 @@ export default function ResponsiveSlider({images}){
 const [width, setWidth] = useState(0);
 const carousel=useRef();
 useEffect(()=>{
-console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+//console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
 setWidth(carousel.current.scrollWidth-carousel.current.offsetWidth);
 //setWidth(1075);
 }, []);
@@ -27,8 +27,8 @@ setWidth(carousel.current.scrollWidth-carousel.current.offsetWidth);
         className='inner-carousel'
         
         >
-           {images.map((image)=>{return (
-           <motion.div className="item"> <img  key={image} src={image} alt=""/> </motion.div>) })}
+           {images.map((image, index)=>{return (
+           <motion.div className="item"> <img  key={index} src={image} alt=""/> </motion.div>) })}
         </motion.div>
 </motion.div>
 
